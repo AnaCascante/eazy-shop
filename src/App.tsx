@@ -1,5 +1,20 @@
+// Code for the App component:
 
-import Header from '../Header';
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+/*
+import Header from  '../Header';
 import Logo from '../Logo';
 import NavBar from '../NavBar';
 import './index.css';
@@ -45,7 +60,7 @@ function App() {
 }
 
 export default App;
-
+*/
 
 
 
