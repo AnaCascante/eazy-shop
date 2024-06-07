@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="text-blue w-1/3">
+    <nav className="flex flex-row justify-between max-h-12">
       <ul>
         <li>
-         <Link to="/">Home page</Link> 
+         <Link to="/">Home</Link> 
         </li>
       </ul>
     </nav>
