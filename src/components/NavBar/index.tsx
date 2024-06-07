@@ -3,13 +3,15 @@ import { FaShoppingCart } from "react-icons/fa";
 import Logo from "../Logo";
 
 
+
 function NavBar() {
   return (
-    <nav className="flex flex-row flex-nowrap ">
+    <nav className="flex flex-row bg-slate-200 justify-normal ">
         <Logo/>
-         <NavLink to="/" className="hover:text-gray-400">Home</NavLink>
-         <NavLink to="/ContactPage" className="hover:text-gray-400">Contact</NavLink> 
-         <NavLink to="/CheckoutPage" className="hover:text-gray-400"><FaShoppingCart /></NavLink>
+         <NavLink to="/" className="hover:text-pink-500 m-3 ">Home</NavLink>
+         <NavLink to="/ContactPage" className="hover:text-pink-500 m-3">Contact</NavLink> 
+         <NavLink to="/CheckoutPage" className="hover:text-pink-500 m-3"><FaShoppingCart /></NavLink>
+         
     </nav>
   );
 }

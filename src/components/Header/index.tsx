@@ -1,5 +1,11 @@
+
+
+import { useState } from "react";
+
 import Logo from "../Logo"; // Import the Logo component
 import NavBar from "../NavBar";
+import OpenCard from "../OpenCard";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Header () {
     return (
@@ -7,6 +13,7 @@ export default function Header () {
         <>   
         <Logo/>
         <NavBar/>
+        <OpenCard/>
         </>
         </header>
     )
