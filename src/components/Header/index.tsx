@@ -1,4 +1,4 @@
-/*import Logo from "../Logo"; // Import the Logo component
+import Logo from "../Logo"; // Import the Logo component
 import NavBar from "../NavBar";
 
 function Header () {
@@ -10,4 +10,4 @@ function Header () {
     )
 }
 
-export default Header;- will add this to the router later */
+export default Header;
