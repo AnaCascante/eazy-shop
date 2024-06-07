@@ -1,66 +1,30 @@
 
-/*
-import Header from  '../Header';
-import Logo from '../Logo';
-import NavBar from '../NavBar';
-import './index.css';
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import HomePage from '../../pages/Homepage';
+  Route,
+  createRoutesFromElement,
+  RouterProvider
+ } from 'react-router-dom';
 
-import ProductPage from '../../pages/Productpage'; 
+//pages
+import HomePage from './Pages/HomePage';  
+import ContactPage from './Pages/ContactPage';
+import RootLayout from './components/layouts/RootLayout';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Header />,
-  },
-  {
-    path: "/",
-    element: <Logo />,
-  },
-  {
-    path: "/",
-    element: <NavBar />,
-  },
-  {
-    path: "/",
-    element: <ProductPage />, 
-  }
-]);
+const router = createBrowserRouter(
+  createRoutesFromElement(
+    <Route path= "/" element = {<RootLayout/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path="/contact" element={<ContactPage/>} />
+    </Route>
+  ));
 
 function App() {
   return (
-   <RouterProvider router ={router}>     
-    <div>
-      <Header />
-      <Logo />
-      <NavBar />  
-    </div>
-    </RouterProvider>
+      <RouterProvider router={router}/>
   );
 }
 
+
 export default App;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
