@@ -1,8 +1,8 @@
 function Logo() {
     return (
-      <div className="text-x1 logo">
-        <img src="/src/images/Eazy_logo.png" alt="logo" />
-      </div>
+      <>
+        <img  className="w-12 justify-start logo" src="/src/images/Eazy_logo.png" alt="logo" />
+      </>
     );
   }
   

@@ -4,7 +4,7 @@ function ContactPage() {
   return (
     <div>
       <NavBar />
-      <h1>Contact</h1>
+      <h1>hello world!</h1>
     </div>
   );
 }   

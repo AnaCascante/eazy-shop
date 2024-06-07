@@ -1,12 +1,14 @@
+import React from "react";
 import NavBar from "../../components/NavBar";
 
-function ProductPage() {
+function CheckoutsucessPage() {
   return (
     <div>
       <NavBar />
-      <h1>Product Page</h1>
+      
+      <h1>Do not buy me! </h1>
     </div>
   );
 }
 
-export default ProductPage;
+export default CheckoutsucessPagePage;

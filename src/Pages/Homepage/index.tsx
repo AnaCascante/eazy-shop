@@ -4,7 +4,8 @@ function HomePage() {
   return (
     <div>
       <NavBar />
-      <h1>home page</h1>
+      <h1>Hello You!</h1>
+      {/* display home page content here */}
     </div>
   );
 }   
