@@ -1,9 +1,11 @@
-import React from 'react'
+import NavBar from "../../components/NavBar";
 
-export default function index() {
+function ContactPage() {
   return (
     <div>
-      
+      <NavBar />
+      <h1>Contact</h1>
     </div>
-  )
-}
+  );
+}   
+export default ContactPage;
