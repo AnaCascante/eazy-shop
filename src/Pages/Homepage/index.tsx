@@ -5,6 +5,7 @@ function HomePage() {
     <div>
       <NavBar />
       <h1>Hello You!</h1>
+      <div>Search bar </div>
       {/* display home page content here */}
     </div>
   );
