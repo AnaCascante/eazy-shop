@@ -2,7 +2,7 @@
 import {
   createBrowserRouter,
   Route,
-  createRoutesFromElement,
+  createRoutesFromElements,
   RouterProvider
  } from 'react-router-dom';
 
@@ -12,10 +12,10 @@ import ContactPage from './Pages/ContactPage';
 import RootLayout from './components/layouts/RootLayout';
 
 const router = createBrowserRouter(
-  createRoutesFromElement(
+  createRoutesFromElements(
     <Route path= "/" element = {<RootLayout/>}>
       <Route index element={<HomePage/>}/>
-      <Route path="/contact" element={<ContactPage/>} />
+      <Route path="/ContactPage" element={<ContactPage/>} />
     </Route>
   ));
 
