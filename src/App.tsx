@@ -16,7 +16,7 @@ import CheckoutsucessPagePage from './Pages/CheckoutsuccessPage';
 import RootLayout from './components/layouts/RootLayout';
 import NavBar from './components/NavBar';
 import OpenCard from './components/OpenCard';
-import Search from './components/Searchbar';
+import SearchBar from './components/SearchBar';
 import Logo from './components/Logo';
 import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
