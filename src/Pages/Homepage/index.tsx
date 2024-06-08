@@ -1,12 +1,11 @@
 // imported libraries
-import React from "react";  
+import React, {useEffect} from "react";  
 import axios from "axios";
 
 
 // imported components 
 import NavBar from "../../components/NavBar";
 import SearchBar from "../../components/Searchbar";
-import Search from "../../components/Searchbar";
 import ProductCard from "../../components/ProductCard";
 
 const HomePage = () => {
