@@ -13,6 +13,7 @@ export const getProducts = async () => {
     console.error('Unable to fetch products:', error);
     throw error; // Throw the error to propagate it to the caller
   }
+  console.log("Hello");
 }; 
 
 // Function to fetch a single product from the API
