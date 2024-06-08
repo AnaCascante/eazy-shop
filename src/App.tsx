@@ -7,10 +7,10 @@ import {
  } from 'react-router-dom';
 
 //imported pages
-import HomePage from './Pages/HomePage';  
-import ContactPage from './Pages/ContactPage';
-import CheckoutPage from './Pages/CheckoutPage';
-import CheckoutsucessPagePage from './Pages/CheckoutsuccessPage';
+import HomePage from '../Pages/HomePage'; 
+import ContactPage from '../Pages/ContactPage';
+import CheckoutPage from '../Pages/CheckoutPage';
+import CheckoutsucessPagePage from '../Pages/CheckoutsuccessPage';
 import RootLayout from './components/layouts/RootLayout';
 
 

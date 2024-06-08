@@ -1,7 +1,7 @@
-import { getProducts } from "../../Api";
-import NavBar from "../../components/NavBar";
-import SearchBar from "../../components/Searchbar";
-import ProductCard from "../../components/ProductCard";
+import { getProducts } from "../../src/Api";
+import NavBar from "../../src/components/NavBar";
+import SearchBar from "../../src/components/Searchbar";
+import ProductCard from "../../src/components/ProductCard";
 
 function HomePage() {
 

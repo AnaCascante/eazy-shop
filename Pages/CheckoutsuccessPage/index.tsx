@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
+import NavBar from "../../src/components/NavBar";
 
 function CheckoutsucessPage() {
   return (
@@ -11,4 +11,4 @@ function CheckoutsucessPage() {
   );
 }
 
-export default CheckoutsucessPagePage;
+export default CheckoutsucessPage;

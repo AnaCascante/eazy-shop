@@ -1,5 +1,5 @@
 import React from "react";  // Import the React library
-import NavBar from "../../components/NavBar";
+import NavBar from "../../src/components/NavBar";  // Import the NavBar component
 
 function CheckoutPage() {
   return (

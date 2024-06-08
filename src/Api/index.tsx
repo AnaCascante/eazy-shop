@@ -14,11 +14,11 @@ export const getProducts = async () => {
   } catch (error) {
     console.error('Unable to fetch products:', error);
   }
-  
+
 };
 
 // Function to fetch a single product from the API
-export const getProductById = async (id) => {
+export const getProductById = async (id: string) => {
   try {
     const response = await fetch(`${URL_PRODUCTS}/${id}`);
     if (!response.ok) {

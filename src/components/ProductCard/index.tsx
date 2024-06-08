@@ -1,64 +1,65 @@
 import React, { useEffect } from 'react';
-import { URL_PRODUCTS } from '../../constants';
-
-interface FetchProducts {
-  count: number;
-  results: Product[];
-}
+import { URL_PRODUCTS } from '../../Api/index';
 
 interface Product {
-  id: number;
+  id: string; // assuming id is a string (UUID)
   title: string;
   price: number;
   description: string;
   category: string;
-  image: string;
-}
-
-interface ProductCardProps {
-  product: Product;
+  image: {
+    url: string;
+    alt: string;
+  };
 }
 
 const ProductData: React.FC = () => {
-  const [products, setProducts] = React.useState<Product[]>([]);
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState<Error | null>(null);
-
   useEffect(() => {
-    fetch(URL_PRODUCTS)
-      .then((response) => response.json())
-      .then((json: FetchProducts) => {
-        setProducts(json.results);
-      })
-      .catch((error) => {
-        setError(error);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch(URL_PRODUCTS);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log('Fetched products:', data);
+      } catch (error) {
+        console.error('Unable to fetch products:', error);
+      }
+    };
+
+    fetchProducts();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  
 
   return (
     <div>
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </div>
-  );
-};
-
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-  return (
-    <div>
-      <h2>{product.title}</h2>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
-      <img src={product.image} alt={product.title} />
+      <h1>Product Data</h1>
+      <p>Check the console for the fetched product data.</p>
     </div>
   );
 };
 
 export default ProductData;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
